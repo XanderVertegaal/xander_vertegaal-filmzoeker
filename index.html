@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="db.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Filmzoeker</title>
+</head>
+<body>
+    <header>
+        <h1><img src="netwinx.png"></h1>
+        <nav>
+            <label for="radio-recent">
+                <input type="radio" name="film-radio" id="radio-recent" value="recent" checked>
+                Recente films (2014--...)
+            </label>
+            
+            <label for="radio-Avengers">
+                <input type="radio" name="film-radio" id="radio-Avengers" value="avenger">
+                The Avengers
+            </label>
+
+            <label for="radio-X-Men">
+                <input type="radio" name="film-radio" id="radio-X-Men" value="xmen">
+                The X-Men
+            </label>
+            
+            <label for="radio-Princess">
+                <input type="radio" name="film-radio" id="radio-Princess" value="princess">
+                Princess
+            </label>
+            
+            <label for="radio-Batman">
+                <input type="radio" name="film-radio" id="radio-Batman" value="batman">
+                Batman
+            </label>
+
+            <label for="search-text">
+                <input type="text" id="search-text" placeholder="Zoek hier op titel">
+            </label>
+
+        </nav>
+    </header>
+    <main>
+        <ul id="movie-list"></ul>
+    </main>
+    <footer>
+        &copy; Netwinx 2021, all rights reserved
+    </footer>
+</body>
+</html>
